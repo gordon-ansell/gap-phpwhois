@@ -95,7 +95,7 @@ class WhoisClient
         $this->WHOIS_SPECIAL      = $servers['WHOIS_SPECIAL'];
         $this->WHOIS_GTLD_HANDLER = $servers['WHOIS_GTLD_HANDLER'];
 
-        $this->codeVersion = file_get_contents(__DIR__ . '/../VERSION');
+        $this->codeVersion = file_get_contents(__DIR__ . '/../VERSION.original');
         // Set version
         $this->version = sprintf("phpWhois v%s", $this->codeVersion);
     }
