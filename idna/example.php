@@ -1,10 +1,10 @@
 <?php
 $encoded = $decoded = $add = '';
 header('Content-Type: text/html; charset=utf-8');
-require_once('idna_convert.class.php');
+require_once('idna_convert2.class.php');
 
 $idn_version = isset($_REQUEST['idn_version']) && $_REQUEST['idn_version'] == 2003 ? 2003 : 2008;
-$IDN = new idna_convert(array('idn_version' => $idn_version));
+$IDN = new idna_convert2(array('idn_version' => $idn_version));
 
 $version_select = '<select size="1" name="idn_version"><option value="2003">IDNA 2003</option><option value="2008"';
 if ($idn_version == 2008) {

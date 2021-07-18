@@ -49,7 +49,7 @@
  * @copyright 2004-2014 phlyLabs Berlin, http://phlylabs.de
  * @version 0.9.0 2014-12-12
  */
-class idna_convert {
+class idna_convert2 {
 
     private $version = '0.9.0';
     protected $sub_version = 'main';
@@ -1024,7 +1024,7 @@ class idna_convert {
      */
     public function getInstance($params = array())
     {
-        return new idna_convert($params);
+        return new idna_convert2($params);
     }
 
     /**
@@ -1043,7 +1043,7 @@ class idna_convert {
 
         $signature = serialize($params);
         if (!isset($instances[$signature])) {
-            $instances[$signature] = idna_convert::getInstance($params);
+            $instances[$signature] = idna_convert2::getInstance($params);
         }
         return $instances[$signature];
     }

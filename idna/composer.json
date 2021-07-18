@@ -19,7 +19,7 @@
     ],
     "autoload": {
         "files": [
-            "idna_convert.class.php"
+            "idna_convert2.class.php"
         ]
     },
     "extra": {

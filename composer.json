@@ -36,7 +36,7 @@
     },
     "autoload": {
         "files": [
-            "idna/idna_convert.class.php"
+            "idna/idna_convert2.class.php"
         ],
         "psr-4": {
             "phpWhois\\": "src/"
